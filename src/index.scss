@@ -7,11 +7,17 @@ body {
   font-family: system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  background: #383838;
 }
 
 .wrapper {
   background: #383838;
+}
+.slogan {
+        color: #FBDA57;
+      }
+hr {
+  color: #9D9B9B;
 }
   
   header {
@@ -24,9 +30,7 @@ body {
       color: white;
       white-space: nowrap;
       
-      .slogan {
-        color: #FBDA57;
-      }
+      
       h1, p {
         margin: 0;
       }
@@ -62,4 +66,79 @@ body {
     }
     }
   }
+
+  .mainContent {
+   // height: 100vh;
+    .bio {
+    display: flex;
+    margin: 5%;
+    color: white;
+      img {
+        margin: 2%;
+      }
+      .text {
+        width: 100%;
+        margin: 90px 0;
+      }
+       p {
+      font-size: 32px;
+        .big {
+          font-size: 40px;
+
+        }
+    }
+  }
+    .slider {
+      background-color: #857F7F;
+      width: 100%;
+    }
+
+    .album {
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin: 5% 10%;
+      }
+    }
+
+    .progs{
+      color: white;
+      table {
+        width: 100%;
+        margin: 2%;
+      
+        img {
+          margin-left: 10%;
+        }
+      }
+    }
+    
+  }
+  
+  footer {
+    color: white;
+      table {
+        
+        width: 100%;
+        margin: 0 5%;
+
+        .social {
+          img {
+          margin: 0 10px;
+          }
+        }
+
+        .contacts {
+          margin: 0 5%;
+          display: flex;
+      align-items: center;
+          img {
+            margin: 10px;
+          }
+      
+      
+        }
+      }
+    }
 
