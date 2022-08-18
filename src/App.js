@@ -1,5 +1,6 @@
 
 import './App.scss';
+import Album from './Album.js';
 
 function App() {
   return <div className='wrapper'>
@@ -40,11 +41,7 @@ function App() {
         
       </div>
 
-      <div className='album'>
-        <img src='/img/album1.png' alt='album1'/>
-        <img src='/img/album2.png' alt='album2'/>
-
-      </div>
+      <Album />
 
       <hr/>
 
