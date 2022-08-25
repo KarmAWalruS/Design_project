@@ -1,6 +1,4 @@
-/** {
-  margin: 0;
-}*/
+
 
 body {
   margin: 0;
@@ -99,17 +97,19 @@ hr {
 
       img {
         margin: 5% 10%;
+        cursor: pointer;
       }
     }
 
     .progs{
       color: white;
+      margin: 2%;
       table {
         width: 100%;
-        margin: 2%;
+        //margin: 2%;
       
         img {
-          margin-left: 10%;
+          margin-left: 12%;
         }
       }
     }
@@ -118,10 +118,11 @@ hr {
   
   footer {
     color: white;
+    margin: 0 5%;
       table {
         
         width: 100%;
-        margin: 0 5%;
+        
 
         .social {
           img {

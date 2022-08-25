@@ -1,9 +1,16 @@
-
+import React from 'react';
 import './App.scss';
-import Album from './Album.js';
+import Slider from './Slider.js';
+import Album from './album.js';
+import Gallery from './gallery.js';
 
 function App() {
+
+const [albumOpenned, setAlbumOpenned ] = React.useState(false);
+
   return <div className='wrapper'>
+
+    {albumOpenned ? <Album AlbCl = {() => setAlbumOpenned(false)} /> : null}
     <header>
       <div className='headerLeft'>
        
@@ -37,12 +44,17 @@ function App() {
       </div>
    
 
-      <div className='slider'>
+      <div className='carousel'>
         
       </div>
-
-      <Album />
-
+        
+        
+      
+      <Gallery AlbumOp = {() => setAlbumOpenned(true)} />
+      
+          
+        
+       
       <hr/>
 
       <div className='progs'>
