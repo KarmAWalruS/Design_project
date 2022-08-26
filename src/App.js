@@ -1,16 +1,19 @@
 import React from 'react';
 import './App.scss';
 import Slider from './Slider.js';
-import Album from './album.js';
+import AlbumInt from './albumInt.js';
 import Gallery from './gallery.js';
+import AlbumFurn from './albumFurn';
 
 function App() {
 
-const [albumOpenned, setAlbumOpenned ] = React.useState(false);
+const [albumIntOpenned, setAlbumIntOpenned ] = React.useState(false);
+const [albumFurnOpenned, setAlbumFurnOpenned] = React.useState(false);
 
   return <div className='wrapper'>
 
-    {albumOpenned ? <Album AlbCl = {() => setAlbumOpenned(false)} /> : null}
+    {albumIntOpenned ? <AlbumInt AlbCl = {() => setAlbumIntOpenned(false)} /> : null}
+    {albumFurnOpenned ? <AlbumFurn AlbCl = {() => setAlbumFurnOpenned(false)} /> : null}
     <header>
       <div className='headerLeft'>
        
@@ -25,9 +28,9 @@ const [albumOpenned, setAlbumOpenned ] = React.useState(false);
       
         <nav className='menu'>
           <ul>
-            <li>О себе</li>
-           <li>Мои работы</li>
-            <li>Стек программ</li>
+            <li><a href='#bio'>О себе</a></li>
+           <li><a href='#projects'>Мои работы</a></li>
+            <li><a href='#stack'>Стек программ</a></li>
           </ul>
         </nav>
       
@@ -35,7 +38,7 @@ const [albumOpenned, setAlbumOpenned ] = React.useState(false);
     <hr/>
 
     <div className='mainContent'>
-      <div className='bio'>
+      <div id='#bio' className='bio'>
         <img width={450} height={572} src="/img/bio.jpg" />
         <div className='text'><p>Привет! Меня зовут Дмитрий, и я  предлагаю вам услуги <br/>
             <span className='slogan big'>Моделирования дизайна интерьера.</span> <br/>
@@ -44,20 +47,21 @@ const [albumOpenned, setAlbumOpenned ] = React.useState(false);
       </div>
    
 
-      <div className='carousel'>
+      <div  className='carousel'>
         
       </div>
         
         
       
-      <Gallery AlbumOp = {() => setAlbumOpenned(true)} />
+      <Gallery  AlbumIntOp = {() => setAlbumIntOpenned(true)} AlbumFurnOp = {() => setAlbumFurnOpenned(true)} />
+      
       
           
         
        
       <hr/>
 
-      <div className='progs'>
+      <div id='stack' className='progs'>
         <table>
           <tr>
             <td>
@@ -87,9 +91,9 @@ const [albumOpenned, setAlbumOpenned ] = React.useState(false);
             <p>2022, 3D дизайн интерьера</p>
           </td>
           <td className='social'>
-            <img src='/img/telegram.png' alt='telegram'/>
-            <img src='/img/OK.png' alt='OK'/>
-            <img src='/img/VK.png' alt='VK'/>
+          <a href='t.me/username'> <img src='/img/telegram.png' alt='telegram'/></a>
+          <a href='ok.ru'><img src='/img/OK.png' alt='OK'/></a>
+            <a href='https://vk.com/del97'> <img src='/img/VK.png' alt='VK'/> </a>
           </td>
           <td className='contacts'>
             <img src='/img/number.png' alt='number'/>

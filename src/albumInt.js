@@ -1,11 +1,11 @@
 import React from "react"
 import './album.scss'
 
-function Album (props) {
+function AlbumInt (props) {
 
     
 
-    return(<div className='foto'>
+    return(<div  className='foto'>
             <div>
                 <button onClick={props.AlbCl} >close</button>
             </div>
@@ -23,4 +23,4 @@ function Album (props) {
 
       }
 
-      export default Album;
+      export default AlbumInt;

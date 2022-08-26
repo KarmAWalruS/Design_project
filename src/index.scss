@@ -60,7 +60,26 @@ hr {
       
       margin: 0 50px;
      padding: 0 30px;
+    
+      a {
+        text-decoration: none;
+      }
+      
+      a:visited
+      {color:white;}
+
+      a:hover 
+      {
+        color: #FBDA57;
+        transition: all .4s;
+
+      }
     }
+     li:hover {
+      transform: scale(1.2);
+     }
+    
+    
     }
     }
   }
@@ -94,22 +113,28 @@ hr {
     .album {
       display: flex;
       justify-content: center;
+      
 
       img {
         margin: 5% 10%;
         cursor: pointer;
       }
+      img:hover {
+        transform: scale(1.2);
+      }
     }
+
 
     .progs{
       color: white;
-      margin: 2%;
+      margin: 4% 5%;
+      //margin: 5%;
       table {
         width: 100%;
         //margin: 2%;
       
         img {
-          margin-left: 12%;
+          margin-left: 14%;
         }
       }
     }
@@ -125,8 +150,12 @@ hr {
         
 
         .social {
+         
           img {
           margin: 0 10px;
+          }
+          img:hover {
+            color:#FBDA57;
           }
         }
 
