@@ -7,7 +7,7 @@ function AlbumInt (props) {
 
     return(<div  className='foto'>
             <div>
-                <button onClick={props.AlbCl} >close</button>
+                <button onClick={props.AlbCl} >X</button>
             </div>
             <div>
                 <img src="./img/1.jpg" alt="1"/>

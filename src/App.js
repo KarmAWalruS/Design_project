@@ -9,7 +9,7 @@ function App() {
 
 const [albumIntOpenned, setAlbumIntOpenned ] = React.useState(false);
 const [albumFurnOpenned, setAlbumFurnOpenned] = React.useState(false);
-
+  
   return <div className='wrapper'>
 
     {albumIntOpenned ? <AlbumInt AlbCl = {() => setAlbumIntOpenned(false)} /> : null}
@@ -35,11 +35,11 @@ const [albumFurnOpenned, setAlbumFurnOpenned] = React.useState(false);
         </nav>
       
     </header>
-    <hr/>
-
+    
+  
     <div className='mainContent'>
       <div id='#bio' className='bio'>
-        <img width={450} height={572} src="/img/bio.jpg" />
+        <img width={350} height={472} src="/img/bio.jpg" />
         <div className='text'><p>Привет! Меня зовут Дмитрий, и я  предлагаю вам услуги <br/>
             <span className='slogan big'>Моделирования дизайна интерьера.</span> <br/>
             Ниже вы можете ознакомиться с моими <span className='slogan'>работами.</span> Там же вы найдете <span className='slogan'>стек технологий</span>, которые я использую в своей работе.</p>
@@ -47,9 +47,7 @@ const [albumFurnOpenned, setAlbumFurnOpenned] = React.useState(false);
       </div>
    
 
-      <div  className='carousel'>
-        
-      </div>
+      
         
         
       
@@ -59,7 +57,7 @@ const [albumFurnOpenned, setAlbumFurnOpenned] = React.useState(false);
           
         
        
-      <hr/>
+    
 
       <div id='stack' className='progs'>
         <table>
@@ -82,22 +80,22 @@ const [albumFurnOpenned, setAlbumFurnOpenned] = React.useState(false);
       </div>
     </div>
 
-    <hr className='slogan'/>
+    
     <footer>
       <table>
         <tr>
-          <td>
+          <td className='left'>
             <h3>Boy&Co Design</h3>
             <p>2022, 3D дизайн интерьера</p>
           </td>
           <td className='social'>
-          <a href='t.me/username'> <img src='/img/telegram.png' alt='telegram'/></a>
-          <a href='ok.ru'><img src='/img/OK.png' alt='OK'/></a>
-            <a href='https://vk.com/del97'> <img src='/img/VK.png' alt='VK'/> </a>
+          <a href='t.me/username' target="_blank"> <img src='/img/telegram.png' alt='telegram'/></a>
+          <a href='ok.ru' target="_blank"><img src='/img/OK.png' alt='OK'/></a>
+            <a href='https://vk.com/del97' target="_blank"> <img src='/img/VK.png' alt='VK'/> </a>
           </td>
           <td className='contacts'>
             <img src='/img/number.png' alt='number'/>
-            <p>+7**********</p>
+            <p className='number'>+7**********</p>
             </td>
             <td className='contacts'>
             <img src='/img/mail.png' alt='mail'/>

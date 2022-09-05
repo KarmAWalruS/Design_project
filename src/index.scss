@@ -1,4 +1,4 @@
-
+//*{ border:1px solid red; box-sizing:border-box; }
 
 body {
   margin: 0;
@@ -14,12 +14,12 @@ body {
 .slogan {
         color: #FBDA57;
       }
-hr {
-  color: #9D9B9B;
-}
+
+hr {width: initial;}
   
   header {
     display: flex;
+    border-bottom: 1px solid #857F7F;
     
 
     .headerLeft {
@@ -40,9 +40,12 @@ hr {
      }
 
     .menu {
+
+      
+      text-overflow: clip;
       color: white;
       text-align: center;
-    float: right;
+    //float: right;
     width: 100%;
     margin: 30px 0;
 
@@ -53,6 +56,16 @@ hr {
    
 
     li {
+      @media (max-width: 1310px) and (min-width: 1071px) {
+        margin: 0 10px;
+        
+      }
+
+      @media (max-width: 1070px) {
+        margin: 5px 83px;
+        
+      }
+      
       font-size: 30px;
       display: inline-block;
       border: 1px solid #18171718;
@@ -85,17 +98,31 @@ hr {
   }
 
   .mainContent {
+    border-bottom: 1px solid #FBDA57;
    // height: 100vh;
-    .bio {
+    .bio { 
+      @media (max-width: 923px) {
+         display: inline; 
+          
+        }
     display: flex;
     margin: 5%;
     color: white;
       img {
+        @media (max-width: 923px) {
+          margin: 3% 20%;
+           
+         }
         margin: 2%;
       }
       .text {
-        width: 100%;
+        @media (max-width: 923px) {
+          margin-left: 20%;
+           
+         }
+        width: auto;
         margin: 90px 0;
+       
       }
        p {
       font-size: 32px;
@@ -111,8 +138,13 @@ hr {
     }
 
     .album {
+      @media (max-width: 959px) {
+        display: grid;
+         
+       }
       display: flex;
       justify-content: center;
+      border-bottom: 1px solid #857F7F;
       
 
       img {
@@ -126,10 +158,17 @@ hr {
 
 
     .progs{
+      
       color: white;
-      margin: 4% 5%;
+      margin: 4% 10%;
       //margin: 5%;
       table {
+        tr {
+          @media (max-width: 923px) {
+          display: grid;
+    margin-left: 35%;
+         }
+        }
         width: 100%;
         //margin: 2%;
       
@@ -148,27 +187,43 @@ hr {
         
         width: 100%;
         
+        td {
+          justify-content: center;
+          margin: 0;
+        }
+        .left {
+          width: 40%;
+        }
 
         .social {
-         
+          width: 30%;
+          justify-content: center;
+          
+              
+          
           img {
           margin: 0 10px;
           }
-          img:hover {
-            color:#FBDA57;
-          }
+          
         }
-
+        
         .contacts {
-          margin: 0 5%;
+        .number {
+            margin-right: 8%
+          }
+          
+          width: 100%;
+          //margin: 0 5%;
           display: flex;
-      align-items: center;
+          justify-content: right;
+      align-items: right;
           img {
             margin: 10px;
           }
       
       
         }
+        
       }
     }
 
